@@ -1,0 +1,15 @@
+Principe solid 1 :Single Responsability 
+Le programme est divisé en 5 classes. Une classe permet d'orienter en fonction du nombre d'arguments. 2 permettent d'accéder aux différentes bases de données et 2 autres servent à afficher les résultats.
+
+Principe solid 2 : Open/closed
+ça découlle du principe précédent. Si on veut capturer plus de données du pokémon par exemple il suffit d'ajouter des lignes pour capturer dans les classes qui ouvrent les bases de données. Je ne vois pas de cas où on aurait besoin de supprimer des lignes pour faire une modification.
+
+Principe solid 3 : Liskov substitution
+Validé car je n'ai pas utilisé d'héritage. J'aurais pu mais ça aurait complexifier plus qu'autre chose je crois
+
+Principe solid 4 : Interface segregation
+Rien de particulierà signaler
+
+Principe solid 5 : Dependency Inversion Principle
+Pour appliquer ce principe, il faudrait créer une classe parent pour englober les classes qui font les appels aux bases de données et faire deux classes filles (sql et http). Idem pour l'impression du résultat, on pourrait faire une classe parent avec deux classes filles en fonction de si on a la description à afficher pas exemple.
+

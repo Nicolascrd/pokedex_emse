@@ -5,7 +5,7 @@ import java.sql.*;
 /* Fait la requête SQL, envoie l'objet ResultSet (sql)*/
 
 public class SQLrequest {
-    public static ResultSet run(int Number, String adresse) {
+    public static ResultSet sqlRequest(int Number, String adresse) {
         /* Connect to the database */
         Connection conn = null;
         ResultSet rs = null;
@@ -22,6 +22,9 @@ public class SQLrequest {
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
+        System.out.println("RS: ici : " + rs);
         return rs;
     }
+
+
 }

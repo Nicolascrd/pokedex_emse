@@ -22,7 +22,4 @@ public class Pokedex {
 
     }
 
-    public String getName() {
-        return "Hello";
-    }
 }

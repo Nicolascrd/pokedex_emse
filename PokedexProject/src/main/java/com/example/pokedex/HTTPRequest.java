@@ -12,7 +12,7 @@ import org.json.simple.parser.ParseException;
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
-
+/* fait la requête http et renvoie l'objet HttpGet*/
 public class HTTPRequest {
     public static Object run(int iD) {
         String jsonResponse = "";

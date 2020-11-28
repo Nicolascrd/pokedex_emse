@@ -2,8 +2,10 @@ package com.example.pokedex;
 
 import java.sql.*;
 
+/* Fait la requête SQL, envoie l'objet ResultSet (sql)*/
+
 public class SQLrequest {
-    public static ResultSet main(int Number, String adresse) {
+    public static ResultSet run(int Number, String adresse) {
         /* Connect to the database */
         Connection conn = null;
         ResultSet rs = null;

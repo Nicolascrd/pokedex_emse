@@ -13,6 +13,8 @@ import org.json.simple.parser.ParseException;
 import java.io.IOException;
 import java.sql.*;
 
+/* Appelle la classe qui fait la requête http, affiche le résultat */
+
 public class Pokedex_api {
     public static void run(int iD) {
             Object resultObject = HTTPRequest.run(iD);
